@@ -9,6 +9,10 @@ body {
     background: linear-gradient(rgba(241, 244, 253, 0.07)17%, rgba(218, 70, 239, 0.05)42%, rgba(99, 102, 241, 0.1)83%);
     height: 100svh;
     font-family: 'Manrope', sans-serif;
+
+}
+.page-1 {
+    margin-inline: 16%;
 }
 
 .navbar {
@@ -22,7 +26,6 @@ body {
 .nav-1 {
     width: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 3rem;
 }
@@ -40,7 +43,7 @@ body {
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 1rem;
 }
 .darkmode {
@@ -101,8 +104,6 @@ input {
 
 
 .container {
-    width: 69%;
-    margin: 0 auto;
     display: flex;
     margin-top: 11.5rem;
 }
@@ -117,7 +118,7 @@ input {
     color: #565973;
     padding-right: 8rem;
 }
-.button {
+.download-button {
     display: flex;
     margin: 3rem 0rem 13.5rem 0rem;
     gap: 1.5rem;
@@ -182,3 +183,81 @@ input {
     align-items: center;
 }
 
+.page-2 {
+    background-color: #ffffff;
+    
+    .container {
+        margin-top: 0;
+        margin-inline: 16%;
+        gap: 12.6rem;
+    }
+    
+}
+
+.logo-bar {
+    display: flex;
+    margin: 8rem 0;
+    justify-content: space-between;
+    margin-inline: 16%;
+    
+    
+}
+
+.logo-box {
+    border: 1px solid #E2E5F1;
+    border-radius: 5px;
+    height: 100px;
+    width: 196px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo-box.last {
+    box-shadow: 0px 0px 10px #E2E5F1;
+}
+
+.page-2-top-right {
+    h1 {
+        font-weight: 900;
+        font-size: 40px;
+        color: #0B0F19;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 18px;
+        color: #9397AD;
+    }
+
+}
+
+.page-2-bottom-right {
+    margin-top: 4.7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(118px, 1fr);
+    column-gap: 2.5rem;
+
+    .text-container {
+        margin-bottom: 5rem;
+        h5 {
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: #0B0F19;
+        }
+        
+        p {
+            font-size: 16px;
+            color: #565973;
+        }
+    }
+    
+}
+
+.pros-box {
+    display: flex;
+    align-items: start;
+    gap: 1.5rem;
+}
