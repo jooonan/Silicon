@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --color-dark: #0b0f19;
+    --color-primary: #6366f1;
+    --color-gray: #9397ad;
+    --color-white: #ffffff;
+    --color-border-gray: #e2e5f1; 
+
+    --container-padding: 1rem;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +18,183 @@
 }
 
 body {
-    /* Använde ChatGPT för att lista ut linear-gradient och hur man använder opacity och hur mycket av skärmen varje färg ska täcka */
-    background: linear-gradient(rgba(241, 244, 253, 0.07)17%, rgba(218, 70, 239, 0.05)42%, rgba(99, 102, 241, 0.1)83%);
-    height: 100svh;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 
 }
-.page-1 {
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+header .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+    }
+}
+
+.nav-link {
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 8px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--color-gray);
+        color: var(--color-white);
+        text-decoration: none;
+    }
+
+    i {
+        margin-right: 0.5rem;
+    }
+}
+
+.btn-toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-toggle-switch .label {
+    font-weight: 600;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+}
+
+.toggle-switch input:checked + .slider {
+    background-color: var(--color-primary);
+}
+
+.toggle-switch input:focus + .slider {
+    box-shadow: 0 0 1px var(--color-primary);
+}
+
+.toggle-switch input:checked + .slider:before {
+    transform: translateX(19px);
+    background-color: var(--color-white);
+}
+
+.toggle-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-gray);
+    transition: all 0.2s;
+}
+
+.toggle-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--color-white);
+    transition: all 0.2s;
+}
+
+.toggle-switch .slider.round {
+    border-radius: 35px;
+}
+
+.toggle-switch .slider.round:before {
+    border-radius: 50%;
+}
+
+.brands .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.brand-box {
+    border: 1px solid var(--color-border-gray);
+    border-radius: 8px;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+    padding: 1rem 0;
+    color: var(--color-gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .page-1 {
     margin-inline: 16%;
 }
 
@@ -51,7 +234,6 @@ body {
     font-size: 1.1rem;
     color: #565973;
 }
-/* Kollade youtube video på hur man gör en toggle switch och ändrade om storlek själv */
 .toggle {
     background-color: #d2d2d2;
     width: 2.875rem;
@@ -260,4 +442,4 @@ input {
     display: flex;
     align-items: start;
     gap: 1.5rem;
-}
+} */
