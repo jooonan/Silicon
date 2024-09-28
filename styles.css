@@ -465,6 +465,78 @@ a {
     }
 }
 
+.review-section {
+    background-color: var(--color-background-gray);
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-content: center;
+        gap: 2rem;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 800;
+            margin-top: 4rem;
+            margin-right: 6rem;
+            margin-left: 2rem;
+        }
+    }
+}
+
+
+.review-card {
+    background-color: var(--color-white);
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px #9397ad34;
+
+    p {
+        font-size: 18px;
+        color: var(--color-dark-gray);
+        margin-bottom: 2rem;
+    }
+
+    i {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+
+    .user-name {
+        font-weight: 700;
+        color: var(--color-dark);
+    }
+
+    .user-occupation {
+        color: var(--color-gray);
+        font-size: 14px;
+    }
+}
+
+.quotation-mark {
+    position: absolute;
+    left: 1rem;
+    top: -2rem;
+}
+
+
 footer {
     .container {
         display: flex;
